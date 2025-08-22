@@ -1,0 +1,155 @@
+{
+  "_resourceType": "trigger",
+  "id": "bccc0d0c-165c-469d-a1c4-5078e6b152eb",
+  "name": "",
+  "prefabId": "",
+  "x": 4,
+  "y": 16,
+  "symbol": "trigger_58",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ],
+        "override": true,
+        "__scriptTabs": "press"
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF_ACTOR_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "variable",
+                      "value": "31"
+                    },
+                    "__collapseElse": true,
+                    "__collapse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "not",
+                            "value": {
+                              "type": "variable",
+                              "value": "32"
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Witam pana menadżera,\nzgarnę ten kufel..."
+                                ],
+                                "__section": "text",
+                                "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+                                "minHeight": 4,
+                                "maxHeight": 7,
+                                "textX": 1,
+                                "textY": 1,
+                                "textHeight": 5,
+                                "position": "bottom",
+                                "clearPrevious": true,
+                                "showFrame": "true",
+                                "speedIn": -1,
+                                "speedOut": -1,
+                                "closeWhen": "key",
+                                "closeButton": "a",
+                                "closeDelayTime": 0.5,
+                                "closeDelayFrames": 30
+                              },
+                              "id": "667b483c-c737-4423-b21b-654d58c004ae"
+                            },
+                            {
+                              "command": "EVENT_REPLACE_TILE_XY",
+                              "args": {
+                                "x": {
+                                  "type": "number",
+                                  "value": 4
+                                },
+                                "y": {
+                                  "type": "number",
+                                  "value": 14
+                                },
+                                "tilesetId": "f994499e-4c56-4fd1-ba53-9720c2fa34ff",
+                                "tileIndex": {
+                                  "type": "number",
+                                  "value": 6
+                                }
+                              },
+                              "id": "ac4941b7-8068-4fe1-a684-4c7609edc84c"
+                            },
+                            {
+                              "command": "EVENT_INC_VALUE",
+                              "args": {
+                                "variable": "29"
+                              },
+                              "id": "afd0049e-5af2-4dfc-9b4a-9d55140c073b"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "32",
+                                "value": {
+                                  "type": "true"
+                                }
+                              },
+                              "id": "88301e41-5613-4b09-85aa-038480c33cea"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "955703c5-8695-47e2-924d-487c3ec777f3"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "c8dec386-28a1-4978-af68-50b2de3630da"
+                }
+              ],
+              "false": []
+            },
+            "id": "8df6a0b5-8a2c-464d-9a3c-fb0661241d2a"
+          }
+        ]
+      },
+      "id": "044a40de-9fa0-4a33-8e94-0257375ef269"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_REMOVE_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "c4d9667d-e3a6-4fa6-9922-8425c9a09479"
+    }
+  ],
+  "_index": 4
+}

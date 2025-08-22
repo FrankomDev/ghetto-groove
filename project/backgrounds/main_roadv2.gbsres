@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "88f65fa8-faa7-4db5-a8f9-ca35a2616369",
+  "name": "main_roadv2",
+  "symbol": "bg_main_roadv2",
+  "width": 42,
+  "height": 18,
+  "imageWidth": 336,
+  "imageHeight": 144,
+  "filename": "main_roadv2.png",
+  "tileColors": "",
+  "autoColor": false
+}

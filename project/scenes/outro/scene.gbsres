@@ -1,0 +1,545 @@
+{
+  "_resourceType": "scene",
+  "id": "276e6ed6-9bfb-4312-bf25-376496214586",
+  "_index": 24,
+  "name": "outro",
+  "backgroundId": "825d5993-ac2a-4f2c-8007-74b89cfc424d",
+  "tilesetId": "",
+  "width": 27,
+  "height": 23,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0024+0f!001a+0f!001a+0f!0013+0f8+0012+0f2+006+0f!0013+0f!006+0f!0013+0f!006+0f8+00b+0f2+006+0f!006+0fb+00!0f!006+0f2+006+0f2+008+0f!00!0f!006+0f2+006+0f2+008+0f!00!0f!006+0f2+006+0f2+008+0f!00!0f!008+0f6+006+0f2+002+0f!00!0f!0014+0f2+002+0f!00!0f!003+0f2+0013+0f!00!0f!003+0f2+0013+0f!00!0f!0018+0f!00!0f!0018+0f!00!0f13+004+0f3+0013+0f!004+0f!0015+0f!004+0f!0015+0f6+001d+",
+  "autoFadeSpeed": 4,
+  "symbol": "scene_25",
+  "x": 1272,
+  "y": 656,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "39056a02-943f-4f6c-82a7-17d6a2bf3235"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1"
+            },
+            "id": "fab3ae9f-2f46-4bdb-a5e9-c6e6af74c4a0"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "dbb76d1a-2966-40d4-88dc-12f509d561cd",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "82d02a5d-5581-4885-971a-35e3e84437bc"
+          }
+        ]
+      },
+      "id": "a439e319-19cb-4a57-82d9-5284d7bf7235"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "30"
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 23
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "tilesetId": "f994499e-4c56-4fd1-ba53-9720c2fa34ff",
+              "tileIndex": {
+                "type": "number",
+                "value": 6
+              }
+            },
+            "id": "56668708-9baa-4148-aec8-e3715b2b5d9b"
+          }
+        ],
+        "false": []
+      },
+      "id": "f3d569af-d034-47c3-af54-bc5edd59a515"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "32"
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "tilesetId": "f994499e-4c56-4fd1-ba53-9720c2fa34ff",
+              "tileIndex": {
+                "type": "number",
+                "value": 6
+              }
+            },
+            "id": "372c355f-4e6e-4ac5-878d-de9071b6770c"
+          }
+        ],
+        "false": []
+      },
+      "id": "9d6ff803-113a-4bee-90ef-f4a8b5e97ba3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "38"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Zaimponowałeś mi młody..."
+              ],
+              "__section": "text",
+              "avatarId": "80b82b59-42df-4034-90e2-9b1dba0bbfb3",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "8af91a74-3d52-45ef-be35-992da2adee3b"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Dziękuję, prosze Pana..."
+              ],
+              "__section": "text",
+              "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "46ffdbe8-5f80-4963-bf39-216911b94155"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mam dla ciebie propozycję..."
+              ],
+              "__section": "text",
+              "avatarId": "80b82b59-42df-4034-90e2-9b1dba0bbfb3",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "a924cb19-6cc3-43c3-8913-330ff2e60a66"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Co powiesz na nagranie demo\ndla Diamond Records?"
+              ],
+              "__section": "text",
+              "avatarId": "80b82b59-42df-4034-90e2-9b1dba0bbfb3",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "cae3f301-d50f-447a-8afb-8381c49aa88e"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "player",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "01bdb633-ed98-4a3b-a976-f8756795fd0e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Naprawdę? To byłby dla mnie\nwielki zaszczyt!"
+              ],
+              "__section": "text",
+              "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "81352c04-1a16-47b8-883b-95676507b018"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "287f8da6-f5b4-4de7-992f-f7b4b6921d04",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "9f1ffe2a-e7fc-408d-a6e7-b7d59e1120d0"
+          }
+        ],
+        "false": []
+      },
+      "id": "6271bcd4-cd3a-4b8a-b07b-bd4fe78e10cd"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "d3c48e4d-67dc-441a-9ce0-25e61303a67e",
+        "__collapse": true
+      },
+      "id": "5f31a782-536a-4c09-84de-f1f9be41e957"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Pięknie to zrobiłeś, Jamal!"
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "b2f40f64-2447-46e3-b475-847f05018e79"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Ta, dokopałeś mu jak totalny\nkot..."
+        ],
+        "__section": "text",
+        "avatarId": "96127fdf-a6f4-4622-8bb8-956be524e5ff",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "149637da-8faa-4dde-b4b4-768da988ba22"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "edf96d29-9a08-4813-b2d3-46e0996f89f2"
+      },
+      "id": "494daffe-1a3e-4ecd-bf14-315b177afbce"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dzięki, chłopaki!"
+        ],
+        "__section": "text",
+        "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9fcfc2d5-4bf9-41a4-9525-bca5014396cd"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "2857c00f-82ac-46fb-9f17-b1a0733e8298",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "9c4ec1d1-5a90-429b-b7f7-631e8070a605"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "2857c00f-82ac-46fb-9f17-b1a0733e8298",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "e42d1e4c-9cef-4d00-b978-762afa098011"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "2857c00f-82ac-46fb-9f17-b1a0733e8298",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "673090f6-30f1-4e73-a28c-6224e97ded49"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Przepraszam, Panie Jamal!"
+        ],
+        "__section": "text",
+        "avatarId": "c0376103-a9a1-4005-9c94-13f86ff1ed3e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "75dbdb7a-c65c-4c9d-bea9-473cb0729d15"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "$self$",
+        "direction": {
+          "type": "direction",
+          "value": "left"
+        }
+      },
+      "id": "ee810825-0f64-40c5-850f-77a78fe75b38"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "$self$",
+        "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+      },
+      "id": "9dcd48ed-578e-4867-9d4a-6951061d9da8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Pan Jefe chciałby odbyć rozmowę\nze zwycięzcą bitwy..."
+        ],
+        "__section": "text",
+        "avatarId": "c0376103-a9a1-4005-9c94-13f86ff1ed3e",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "6eacdffc-229d-490a-a284-866d1a0aed4c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "38",
+        "value": {
+          "type": "true"
+        }
+      },
+      "id": "4fa5156d-612e-4d87-89b2-0d7254c939ff"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "276e6ed6-9bfb-4312-bf25-376496214586",
+        "x": {
+          "type": "number",
+          "value": 5
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "up",
+        "fadeSpeed": 4,
+        "__collapse": false
+      },
+      "id": "3a3f3dae-656f-428e-a075-4d76837bb3ef"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f",
+  "autoFadeEventCollapse": false
+}

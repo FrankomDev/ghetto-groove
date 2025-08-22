@@ -1,0 +1,79 @@
+{
+  "_resourceType": "scene",
+  "id": "8a2e6dfd-cc1e-40b2-a401-5b8b519f9375",
+  "_index": 13,
+  "name": "lombard",
+  "backgroundId": "67ca3ae4-a612-427e-af01-5070cb8658e8",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0040+0fc+008+0f!00a+0f!008+0f!00a+0f!008+0f!00a+0f2+007+0fc+007+0f2+00a+0f!008+0f!00a+0f!008+0f!00a+0f!008+0f!00a+0f!008+0f5+002+0f5+00c+0f!002+0f!0010+0f4+0010+0f4+0030+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_14",
+  "x": 640,
+  "y": 872,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "2e143edf-9127-493a-9ab3-da69685c471a"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1"
+            },
+            "id": "e5695ded-df59-461d-a79f-66d38960e397"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "dbb76d1a-2966-40d4-88dc-12f509d561cd",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "ae4f1189-d74c-488b-847f-753cb358a857"
+          }
+        ]
+      },
+      "id": "71f14cde-7e4d-49c8-abaa-53f0a0c6fd10"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "d3c48e4d-67dc-441a-9ce0-25e61303a67e"
+      },
+      "id": "97d1e327-978c-471e-b83a-6ae274e00393"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f"
+}

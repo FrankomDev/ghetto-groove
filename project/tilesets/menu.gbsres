@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "06d47b63-4753-45fc-8b3a-ff619ab676c1",
+  "name": "menu",
+  "symbol": "tileset_menu",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "menu.png"
+}

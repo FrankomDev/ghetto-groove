@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "a932b640-eeda-4b37-8aa3-8f27c081edb2",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "7a4cc5f3-d1c7-4cc4-801d-0b610565b113",
+  "prefabId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_16",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "jestem agresywny\nchcesz w pysk??"
+        ],
+        "__section": "text",
+        "avatarId": "96127fdf-a6f4-4622-8bb8-956be524e5ff",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "36f960ea-9a9d-4c0c-a52a-60f9b8c9cf01"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 21,
+  "y": 9,
+  "_index": 3
+}

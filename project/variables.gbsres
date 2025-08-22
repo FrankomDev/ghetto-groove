@@ -1,0 +1,240 @@
+{
+  "_resourceType": "variables",
+  "variables": [
+    {
+      "id": "0",
+      "name": "graczx",
+      "symbol": "var_graczx"
+    },
+    {
+      "id": "1",
+      "name": "graczy",
+      "symbol": "var_graczy"
+    },
+    {
+      "id": "2",
+      "name": "taknie",
+      "symbol": "var_taknie"
+    },
+    {
+      "id": "3",
+      "name": "ItemToolbox",
+      "symbol": "var_itemtoolbox"
+    },
+    {
+      "id": "4",
+      "name": "UsedItem",
+      "symbol": "var_useditem_0"
+    },
+    {
+      "id": "5",
+      "name": "ItemCoffee",
+      "symbol": "var_itemcoffee"
+    },
+    {
+      "id": "6",
+      "name": "IsVHSUsed",
+      "symbol": "var_isvhsused"
+    },
+    {
+      "id": "7",
+      "name": "Electricity",
+      "symbol": "var_electricity"
+    },
+    {
+      "id": "8",
+      "name": "Elektryk",
+      "symbol": "var_elektryk"
+    },
+    {
+      "id": "9",
+      "name": "ItemVHS",
+      "symbol": "var_itemvhs"
+    },
+    {
+      "id": "10",
+      "name": "BeatPlayed",
+      "symbol": "var_beatplayed"
+    },
+    {
+      "id": "11",
+      "name": "IntroRoomDone",
+      "symbol": "var_introroomdone"
+    },
+    {
+      "id": "12",
+      "name": "TutorialDone",
+      "symbol": "var_tutorialdone"
+    },
+    {
+      "id": "13",
+      "name": "T",
+      "symbol": "var_t"
+    },
+    {
+      "id": "14",
+      "name": "Inspiracja1",
+      "symbol": "var_inspiracja1"
+    },
+    {
+      "id": "15",
+      "name": "VHSDone",
+      "symbol": "var_vhsdone"
+    },
+    {
+      "id": "16",
+      "name": "VHSTalk",
+      "symbol": "var_vhstalk"
+    },
+    {
+      "id": "17",
+      "name": "LMR",
+      "symbol": "var_lmr"
+    },
+    {
+      "id": "18",
+      "name": "Rooftop",
+      "symbol": "var_rooftop"
+    },
+    {
+      "id": "19",
+      "name": "Battle1",
+      "symbol": "var_battle1"
+    },
+    {
+      "id": "20",
+      "name": "BattleOneLost",
+      "symbol": "var_battleonelost"
+    },
+    {
+      "id": "21",
+      "name": "Akt2Intro",
+      "symbol": "var_akt2intro"
+    },
+    {
+      "id": "22",
+      "name": "SkreczuQuest",
+      "symbol": "var_skreczuquest"
+    },
+    {
+      "id": "23",
+      "name": "akt2slot1",
+      "symbol": "var_akt2slot1"
+    },
+    {
+      "id": "24",
+      "name": "Akt2UsedItem",
+      "symbol": "var_akt2useditem"
+    },
+    {
+      "id": "25",
+      "name": "ShoesSeen",
+      "symbol": "var_shoesseen"
+    },
+    {
+      "id": "26",
+      "name": "ShoesWear",
+      "symbol": "var_shoeswear"
+    },
+    {
+      "id": "27",
+      "name": "Głośnik",
+      "symbol": "var_g_o_nik"
+    },
+    {
+      "id": "28",
+      "name": "Inspiracja2",
+      "symbol": "var_inspiracja2"
+    },
+    {
+      "id": "29",
+      "name": "Bartender",
+      "symbol": "var_bartender"
+    },
+    {
+      "id": "30",
+      "name": "Table1",
+      "symbol": "var_table1"
+    },
+    {
+      "id": "31",
+      "name": "robota",
+      "symbol": "var_robota"
+    },
+    {
+      "id": "32",
+      "name": "Table2",
+      "symbol": "var_table2"
+    },
+    {
+      "id": "33",
+      "name": "menel",
+      "symbol": "var_menel"
+    },
+    {
+      "id": "34",
+      "name": "Akt2Slot2",
+      "symbol": "var_akt2slot2_0"
+    },
+    {
+      "id": "35",
+      "name": "menago",
+      "symbol": "var_menago"
+    },
+    {
+      "id": "36",
+      "name": "Bitwa2",
+      "symbol": "var_bitwa2"
+    },
+    {
+      "id": "37",
+      "name": "Battle2Lost",
+      "symbol": "var_battle2lost"
+    },
+    {
+      "id": "38",
+      "name": "outro2",
+      "symbol": "var_outro2"
+    },
+    {
+      "id": "39",
+      "name": "akt1finish",
+      "symbol": "var_akt1finish"
+    },
+    {
+      "id": "2a31a70b-767d-41fa-afff-ee9d42846ebd__L0",
+      "name": "Local 0",
+      "symbol": "var_local_0"
+    },
+    {
+      "id": "0695ba62-37cf-461e-a18c-f6851443630b__L0",
+      "name": "slot5",
+      "symbol": "var_slot5_1"
+    },
+    {
+      "id": "8921433a-d3af-4acc-b5e2-8f11686d2c57__L0",
+      "name": "Local 0",
+      "symbol": "var_local_1"
+    },
+    {
+      "id": "99db3929-69ca-46cf-8de4-0df67f2010b9__L0",
+      "name": "rozmowa",
+      "symbol": "var_rozmowa"
+    },
+    {
+      "id": "99db3929-69ca-46cf-8de4-0df67f2010b9__L1",
+      "name": "rozmowa2",
+      "symbol": "var_rozmowa2"
+    },
+    {
+      "id": "ae1d47cf-6e5b-44e5-bffc-99bc11d38636__L0",
+      "name": "Local 0",
+      "symbol": "var_local_2"
+    },
+    {
+      "id": "073e0914-bdec-432b-ac29-2a8d92ae458f__L0",
+      "name": "Local 0",
+      "symbol": "var_local_3"
+    }
+  ]
+}

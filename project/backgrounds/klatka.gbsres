@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "57d70001-a222-40be-a7ba-33b887a8a5b6",
+  "name": "klatka",
+  "symbol": "bg_klatka",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "klatka.png",
+  "tileColors": "0717+057+07d+05!032+054+07d+05!032+054+07d+05!032+054+07d+027+07d+027+07d+024+073+058+075+024+073+052+032+05!032+05!075+024+073+052+032+05!032+05!07c+052+032+054+079+02b+079+02b+079+02b+079+023+0746+",
+  "autoColor": false
+}

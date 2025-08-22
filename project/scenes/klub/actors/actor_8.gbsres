@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "be554067-5654-4007-a66d-d394f7943b44",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e9b8993b-c736-44fa-8ac5-1f906a082468",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_104",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Spływaj!\nSzykuję się do bitwy!"
+        ],
+        "__section": "text",
+        "avatarId": "e15a78e7-66d1-4af6-9baf-a718834d2dcb",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "978bf5a5-af52-417c-947d-f957a40dfe0a"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 2,
+  "y": 10,
+  "_index": 8
+}

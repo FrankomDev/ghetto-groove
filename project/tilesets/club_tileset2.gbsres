@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "f994499e-4c56-4fd1-ba53-9720c2fa34ff",
+  "name": "club_tileset2",
+  "symbol": "tileset_club_tileset2",
+  "width": 4,
+  "height": 4,
+  "imageWidth": 32,
+  "imageHeight": 32,
+  "filename": "club_tileset2.png"
+}

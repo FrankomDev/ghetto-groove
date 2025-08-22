@@ -1,0 +1,79 @@
+{
+  "_resourceType": "scene",
+  "id": "29a4eb49-33c0-4c7b-97ea-20a0749bc65f",
+  "_index": 14,
+  "name": "sklep",
+  "backgroundId": "304f5312-2d2b-447b-ac10-13cc08f1d56b",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0029+0f!0013+0f!00a+0f!008+0f!00a+0f!008+0fc+008+0f!00a+0f!008+0f!00a+0f7+002+0f9+008+0f!002+0f!007+0f!007+0f2+00!0fa+007+0f!003+0f!00f+0f!003+0f!00f+0f!003+0f2+002+0fd+004+0f!002+0f!0010+0f4+0036+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_15",
+  "x": 304,
+  "y": 856,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "ba5b379b-e9a9-493c-a030-c2bc59ecb731"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1"
+            },
+            "id": "cdbf3c71-b2fe-4564-85a0-dadba1550140"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "dbb76d1a-2966-40d4-88dc-12f509d561cd",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "7fee8eab-9469-41b2-9806-c6284de265a7"
+          }
+        ]
+      },
+      "id": "d5846303-3f47-40eb-8a14-8df23f4857cb"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "d3c48e4d-67dc-441a-9ce0-25e61303a67e"
+      },
+      "id": "ad561b9f-886e-45be-8f64-cbb97f97c550"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f"
+}

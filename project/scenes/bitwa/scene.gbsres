@@ -1,0 +1,1265 @@
+{
+  "_resourceType": "scene",
+  "id": "ffcab9ce-3710-4c41-8976-7325d42cc914",
+  "_index": 10,
+  "name": "bitwa",
+  "backgroundId": "f3a55b25-36dc-453c-8d3e-a4ccc19aef3c",
+  "tilesetId": "",
+  "width": 30,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00e+0f!008+0f7+00e+0f!008+0f!0014+0f!008+0f!00d+0f!006+0fa+00d+0f!005+0f2+003+0f2+003+0f!00d+0f8+008+0f!00d+0f!00!0f2+00c+0f!00d+0f2+00!0f!00c+0f!00d+0f4+00c+0f2+00c+0f!00f+0f2+00c+0f!00f+0f2+00b+0f2+00f+0f2+006+0f2+003+0f2+00f+0f2+005+0f!002+0f5+00f+0f2+005+0f!002+0f5+00f+0f5+0019+0f2+002+0f3+001e+0f3c+001e+",
+  "autoFadeSpeed": 2,
+  "symbol": "scene_11",
+  "x": 1000,
+  "y": 64,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "59b81502-04dd-41aa-85e9-0cb6ce482b1c",
+        "__collapse": false
+      },
+      "id": "1f382a58-0680-4e75-81e1-4490f48db2cf"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": 0.5,
+        "frames": 30
+      },
+      "id": "b0252608-d040-48e5-a36f-1a79f970c251"
+    },
+    {
+      "command": "EVENT_MUTE_CHANNEL",
+      "args": {
+        "channels": [
+          0
+        ]
+      },
+      "id": "40bb275f-5f97-4b9a-a860-0a59c70a5153"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dobra, posłuchaj mnie Jamal..."
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "d04a14c5-374c-4b93-b501-b45b0166c425"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Będziesz rozgrywał bitwę z\nDługim..."
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "6f533faf-c851-4fa6-877d-815000d73745"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "7245f608-db71-40cb-9488-dd88bc24ef91"
+      },
+      "id": "d3a39063-fe9f-4b19-bb2e-9860be185e48"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "7245f608-db71-40cb-9488-dd88bc24ef91",
+        "speed": 0.5
+      },
+      "id": "c2e7a783-a2bd-4bfb-a504-883ef80860d2"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "7245f608-db71-40cb-9488-dd88bc24ef91",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "moveType": "vertical",
+        "useCollisions": false
+      },
+      "id": "4638fd37-d252-4661-9721-49d703f250b0"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "No, szykuje się mocna rozkminka"
+        ],
+        "__section": "text",
+        "avatarId": "96127fdf-a6f4-4622-8bb8-956be524e5ff",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "a34050b4-c0fe-4e3e-a008-7b87662aeb30"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Chłopaki - wers za wers.\nLamar... włączaj bit!"
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e138e852-1a2f-44d7-9bbe-18e52029da77"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "2531aa53-6796-4a87-b2b6-9cab1d6b91da",
+        "emoteId": "f1be2ac3-04ab-482a-8b83-99ffba1a89cd"
+      },
+      "id": "c91e08d4-5886-4600-a4c7-5211f3416928"
+    },
+    {
+      "command": "EVENT_MUTE_CHANNEL",
+      "args": {
+        "channels": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "id": "b8be16f0-67b1-4ec7-a366-6ba5d7fa0327"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Długi... wchodzisz pierwszy!"
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "2d093195-b935-4cb0-b535-949a8b6d161d"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "7245f608-db71-40cb-9488-dd88bc24ef91",
+        "emoteId": "d508e529-57eb-458b-9782-66f318243c32"
+      },
+      "id": "4e281690-2b95-4d6f-8050-61d98e0cb74b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Twoja panna wpada do mnie na obiad\nnie masz forsy by jej karmić i dlatego \nchodzi głodna...\n"
+        ],
+        "__section": "text",
+        "avatarId": "d5719cb3-96c3-42b2-b49b-9adb6e347b21",
+        "minHeight": 4,
+        "maxHeight": 5,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "60cb147e-2e7e-4c0f-a4fc-df195110d2a2"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "2531aa53-6796-4a87-b2b6-9cab1d6b91da",
+        "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+      },
+      "id": "0b003e18-9b8f-44ef-9cad-eee6e81e10a5"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Co za gostek, przecież ty nie\nmasz panny Jamal."
+        ],
+        "__section": "text",
+        "avatarId": "bb7c8f91-9b77-4985-bc7b-c1a1464c8220",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "7336139e-2bf9-4321-8cbc-1cc472e28787"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dobra - odbijaj to."
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "1bcf586d-71c4-4f76-aba4-3bf0fc2714e3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Nie mam panny, \na ty nie umiesz robić jedzenia..."
+        ],
+        "__section": "text",
+        "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": true
+      },
+      "id": "c74eb00b-3214-4cd7-a189-a6f9c4892a12"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "twoje kolacje z dupami to schizofrenia",
+        "option2": "więc nie mam nic do powiedzenia",
+        "option3": "więc przytulasz się do poduszki w nocy",
+        "option4": "więc gdy nawijasz to ziewam",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue",
+        "__collapse": true
+      },
+      "id": "8793164f-05c3-4d2a-9e82-4f4cb20c2699"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "19"
+            },
+            "id": "a40d2b9d-d397-45ea-a863-a458c117ecfb"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "1704f778-6c1b-4020-8452-e8bd21b202be",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "0dbb6c74-e8e2-42c0-8f9e-f3aecb391567"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Dobre to było stary!"
+              ],
+              "__section": "text",
+              "avatarId": "96127fdf-a6f4-4622-8bb8-956be524e5ff",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "6c21441f-0abd-4720-83d7-40c478dc5f56"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "1704f778-6c1b-4020-8452-e8bd21b202be",
+              "emoteId": "70a4ce25-1fe4-4ab1-aee9-21255e70fb76"
+            },
+            "id": "14fc98c7-d2b2-41ff-a8a5-5e134f13b9da"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Eeee... Co?"
+              ],
+              "__section": "text",
+              "avatarId": "96127fdf-a6f4-4622-8bb8-956be524e5ff",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "21c0e12f-62d5-4e5e-8bf5-101ea44048cc"
+          }
+        ]
+      },
+      "id": "95a478bd-615a-4300-af0a-a109452831c7"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Łamanie cie na bicie to dla mnie sport\nTwoja kariera to dyskieta - bo to \njeden wielki flop."
+        ],
+        "__section": "text",
+        "avatarId": "d5719cb3-96c3-42b2-b49b-9adb6e347b21",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": true
+      },
+      "id": "946ff0dd-fb0b-4b31-8ca8-f612c36ecf13"
+    },
+    {
+      "command": "EVENT_ACTOR_EMOTE",
+      "args": {
+        "actorId": "4068c2a8-5d5d-42db-83d3-4148c7a5c658",
+        "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+      },
+      "id": "4c85c37b-24e9-4ead-a3b4-debcc8033cf7"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dobra gra słów, stary!"
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e8bd501b-902d-44da-9e29-1511f39b93a4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dobra, teraz ja karty rozkładam\nTwój fiut jest jak dyskietka..."
+        ],
+        "__section": "text",
+        "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "8158750a-5e82-4bb0-b498-2d3e64c784ba"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "Ale nie umiesz wkładać",
+        "option2": "Tralalala",
+        "option3": "Bo ma 3,5 cala",
+        "option4": "Bo jest plastikowy",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue"
+      },
+      "id": "b91358b4-8630-47e8-957f-b59edfac4cd3"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "4068c2a8-5d5d-42db-83d3-4148c7a5c658",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "9224d6c4-6b6a-4b71-9512-c5fe578007b5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "DAMN, co za gość, skąd on\nma te przekminy!"
+              ],
+              "__section": "text",
+              "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "43c1ac94-63c5-4135-b930-89b5fbf06dc9"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "19"
+            },
+            "id": "a9dd947f-8426-4552-86d9-4ba051e70afb"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "7245f608-db71-40cb-9488-dd88bc24ef91",
+              "emoteId": "d508e529-57eb-458b-9782-66f318243c32"
+            },
+            "id": "d054a52d-75a5-4a72-8e8a-78b8d2b6bed2"
+          }
+        ]
+      },
+      "id": "25039a4a-9dbf-4746-92c5-b8003c754f22"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Nieźle, ale tak się składa\nże była u mnie twoja dupa\ni wcale nie narzekała!"
+        ],
+        "__section": "text",
+        "avatarId": "d5719cb3-96c3-42b2-b49b-9adb6e347b21",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "de8a8a27-e2a0-4c99-b2ee-a1dd1cd408e5"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "ALE ODBIŁ!"
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "26a94165-0a75-4252-96fc-f5d583720f60"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Nie mam laski, mówiłem, chociaż\nw sumie prawda..."
+        ],
+        "__section": "text",
+        "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "81d6aa39-12f7-4c9e-a92d-e7de3dc7f5ea"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "jakbym miał to by była ładna",
+        "option2": "ta co u ciebie była to twoja matka",
+        "option3": "chciałbym bardzo mieć dziewczynę",
+        "option4": "jedyne co masz sztywne to gadka",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue"
+      },
+      "id": "c7048977-9395-4111-85cb-200888c9c514"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "HAHAHHAHAHA!"
+              ],
+              "__section": "text",
+              "avatarId": "bb7c8f91-9b77-4985-bc7b-c1a1464c8220",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "c01f332b-7db6-4118-9a59-88116102aae4"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "7245f608-db71-40cb-9488-dd88bc24ef91",
+              "emoteId": "9df5f63f-ea47-447e-9b14-cb2dbafb697d"
+            },
+            "id": "5c6e3368-611d-4991-b328-5f2634e7e889"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Ale nie po rodzicach!"
+              ],
+              "__section": "text",
+              "avatarId": "d5719cb3-96c3-42b2-b49b-9adb6e347b21",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "514a55bc-aa96-43a3-abbb-db2e1e83abaa"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "19"
+            },
+            "id": "f82fa35d-c568-45d8-b2ce-b97bb2440b10"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Jeju... Jamal..."
+              ],
+              "__section": "text",
+              "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "cb2598e2-b815-419d-b094-176485cc0d05"
+          }
+        ]
+      },
+      "id": "eefb7c66-6df7-454b-90d5-6d4f557236bc"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jestem marynarzem na tej ośce\nchociaż kiedy trzeba to mam pannę\nw każdym porcie"
+        ],
+        "__section": "text",
+        "avatarId": "d5719cb3-96c3-42b2-b49b-9adb6e347b21",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "59ce7cf1-025b-4c8f-9f21-b4a24268c06c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Twoje panny stary to jest z sieci \nzwykłe zdjęcie\njesteś marynarzem..."
+        ],
+        "__section": "text",
+        "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "d23aa3ce-d053-4172-8b7e-96677122b0bb"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "bo lubisz pić wódeczkę",
+        "option2": "bo zbełtałeś na wycieraczkę wczoraj",
+        "option3": "ale twój port to jedynie ethernet",
+        "option4": "bo masz słodką czapeczkę",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue"
+      },
+      "id": "23e24a5b-c7b2-4123-af32-8343b361902c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "19"
+            },
+            "id": "9b5c52a2-d347-4cec-871b-4cd3de7e9aa8"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Cholera, informatyczny żart.\nAle dobrze to weszło!"
+              ],
+              "__section": "text",
+              "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "d069cad2-eee3-4ee3-b909-e519e3b3a552"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Kiepsko Jamal..."
+              ],
+              "__section": "text",
+              "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "11adf852-2d6e-400c-9fd7-03d378f37343"
+          }
+        ]
+      },
+      "id": "7e149645-71f7-4d53-bbfe-3a9cc969216b"
+    },
+    {
+      "command": "EVENT_MUTE_CHANNEL",
+      "args": {
+        "channels": [
+          0
+        ],
+        "__collapse": true
+      },
+      "id": "be99a02a-48fa-4d44-9051-df49d060ba16"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dobra, chłopaki, co myślicie?\nKto wygrał?"
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30,
+        "__collapse": true
+      },
+      "id": "fa3266a4-60ed-4e5a-9078-64983e7e5486"
+    },
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "dde4857d-8777-4014-9eaf-53960b520da6"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "19"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Przepraszam Długi, ale Jamal\ncię zjadł."
+              ],
+              "__section": "text",
+              "avatarId": "96127fdf-a6f4-4622-8bb8-956be524e5ff",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "b17766fd-3289-4b4a-b26b-50c3af848e04"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Ta, chłopak pokazał jak\nto się robi!"
+              ],
+              "__section": "text",
+              "avatarId": "bb7c8f91-9b77-4985-bc7b-c1a1464c8220",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "56d08104-56c7-496d-a358-87e79ec8d474"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "39",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "e0b3f151-1629-4507-975e-89952bd523cd"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Szacun stary, pokonałeś\nmnie uczciwie."
+              ],
+              "__section": "text",
+              "avatarId": "d5719cb3-96c3-42b2-b49b-9adb6e347b21",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "4f586012-95ba-4215-b9a7-abac8785b909"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "37688ddc-eb82-4cf2-8c95-1644cefe5215",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 1
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "0c578362-5b3e-4056-86b9-37b968b7b7a3"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "No cóż... jednak Jamal jest\nbez formy."
+              ],
+              "__section": "text",
+              "avatarId": "96127fdf-a6f4-4622-8bb8-956be524e5ff",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "0969424d-2a1a-41fe-a5f6-bd181759d43d"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "No niestety... Przeceniliśmy\ncię stary... przegrać z Długim?"
+              ],
+              "__section": "text",
+              "avatarId": "bb7c8f91-9b77-4985-bc7b-c1a1464c8220",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "2b87b4d4-47e0-4af9-8a98-8714c7614bbf"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Ta... Trochę wstyd bracie..."
+              ],
+              "__section": "text",
+              "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "28e8e30f-48c0-4f31-a41b-caea9085b920"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "20",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "999584a4-28d7-4fe2-933f-d162826657bb"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "82423ab5-6d17-4d87-8b2d-46e6f4dcc47b",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 3
+            },
+            "id": "b2fadcbd-4864-453f-8127-e1c3f43b3151"
+          }
+        ]
+      },
+      "id": "fde8847f-880c-4e3a-82a1-ea6f4872f191"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f",
+  "autoFadeEventCollapse": false
+}

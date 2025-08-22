@@ -1,0 +1,129 @@
+{
+  "_resourceType": "scene",
+  "id": "287f8da6-f5b4-4de7-992f-f7b4b6921d04",
+  "_index": 21,
+  "name": "Scena 22",
+  "backgroundId": "26fc25ce-ff8b-4cdd-8bfc-76ea774d79e7",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_22",
+  "x": 304,
+  "y": 264,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "1a053dbb-e0ea-4ed9-a22d-acab73cba31e"
+    },
+    {
+      "command": "EVENT_LOOP",
+      "args": {},
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "nowa gra",
+              "falseText": "wczytaj grę",
+              "__collapse": false
+            },
+            "id": "3aae7f33-4f90-437a-b978-3773fb869030"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "e74b3898-3a12-47a2-8fb2-8ef8daed353b",
+                    "x": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "direction": "",
+                    "fadeSpeed": 4
+                  },
+                  "id": "a6683ce9-52ae-4e39-993b-64abdd241a86"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_SAVED_DATA",
+                  "args": {
+                    "saveSlot": 0,
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_LOAD_DATA",
+                        "args": {
+                          "saveSlot": 0
+                        },
+                        "id": "5effca87-5eac-492e-8f14-cf48a6c7a1b6"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "nie masz zapisanej gry"
+                          ],
+                          "__section": "text",
+                          "avatarId": "",
+                          "minHeight": 4,
+                          "maxHeight": 7,
+                          "textX": 1,
+                          "textY": 1,
+                          "textHeight": 5,
+                          "position": "bottom",
+                          "clearPrevious": true,
+                          "showFrame": "true",
+                          "speedIn": -1,
+                          "speedOut": -1,
+                          "closeWhen": "key",
+                          "closeButton": "a",
+                          "closeDelayTime": 0.5,
+                          "closeDelayFrames": 30
+                        },
+                        "id": "0d59206f-56f2-406d-a688-3bf7d3c08018"
+                      }
+                    ]
+                  },
+                  "id": "aacb0c17-be4f-4752-82d0-86e79c77e0c1"
+                }
+              ]
+            },
+            "id": "7990d1fd-c19f-4481-aabc-1baf2842a6a6"
+          }
+        ]
+      },
+      "id": "c61f14ba-47f9-4fad-9a3d-05dec758987b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": []
+}

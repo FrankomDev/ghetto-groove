@@ -1,0 +1,9 @@
+{
+  "_resourceType": "music",
+  "id": "2f099390-5ed8-4888-8cbe-f080e2c9fc01",
+  "name": "song_template",
+  "symbol": "song_song_template",
+  "filename": "song_template.uge",
+  "settings": {},
+  "type": "uge"
+}

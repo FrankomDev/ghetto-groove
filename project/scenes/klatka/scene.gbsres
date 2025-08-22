@@ -1,0 +1,80 @@
+{
+  "_resourceType": "scene",
+  "id": "056f25b9-b19c-4dd5-83ae-575a13246598",
+  "_index": 4,
+  "name": "klatka",
+  "backgroundId": "57d70001-a222-40be-a7ba-33b887a8a5b6",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "002+0f!0013+0f!0013+0f!0013+0f6+00e+0f2+002+0f5+00b+0f!007+0f!00b+0f!007+0f!00b+0f!003+08!04!002+0f2+00a+0f!003+08!04!002+0f2+00a+0f!003+08!04!002+0f5+007+0f!003+08!04!002+0f2+002+0f6+002+0f!003+08!04!00a+0f2+002+0f5+00b+0f!007+0f!00b+0f!007+0f!003+0f9+007+0f6+002+0f4+009+0f4+001d+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_5",
+  "x": 656,
+  "y": 264,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "f67c5714-c93c-4ffa-930f-84a791d6875d"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1"
+            },
+            "id": "8ce1de9e-c4b1-4f19-8556-ed357f50de14"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "24cb40d4-e70c-4182-84a6-cac04acff2a5",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "3e6b99de-a76f-49f5-9302-2f499c4f04ef"
+          }
+        ]
+      },
+      "id": "3021d241-051d-4e14-952a-48c6b45e14b1"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "6430d01d-b5ad-4ef9-a38c-18b78f363a21"
+      },
+      "id": "b5786800-9c2f-4cea-96d2-141e9d2164a6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f",
+  "autoFadeEventCollapse": true
+}

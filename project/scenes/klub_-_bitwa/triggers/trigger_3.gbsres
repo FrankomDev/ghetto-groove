@@ -1,0 +1,102 @@
+{
+  "_resourceType": "trigger",
+  "id": "c6b812ae-a6ed-45c2-8288-32f09a39ddf4",
+  "name": "",
+  "prefabId": "",
+  "x": 16,
+  "y": 12,
+  "symbol": "trigger_49",
+  "prefabScriptOverrides": {},
+  "width": 2,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "27"
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Ale dudni pod tym głośnikiem.\nMoce bity tu grają."
+              ],
+              "__section": "text",
+              "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "2deda18f-bf6e-40fd-bb90-090f12a55189"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Zdobyłeś inspirację!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 2,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "3a62dd33-91b5-4270-ae13-4c492adecf60"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "27",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "3a6384f7-b428-4f3e-bd6d-014ec8caca0f"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "28"
+            },
+            "id": "ee6a0c0b-dbbc-4006-8a57-7b8778d15121"
+          }
+        ],
+        "false": []
+      },
+      "id": "aafc9089-f55c-4bf7-90e7-c970a99f1f04"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

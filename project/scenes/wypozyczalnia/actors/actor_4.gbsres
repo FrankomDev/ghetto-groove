@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "deb7ddad-fe99-49ae-bcd4-2d0dc86aa06d",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "8ca25443-ec39-4cab-9efd-5a79f131a984",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_106",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Ale kozackie kasety!\nChciałbym obejrzeć je wszystkie!"
+        ],
+        "__section": "text",
+        "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "ae40efaf-2576-4bc2-bcff-bb513690efb9"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 10,
+  "y": 12,
+  "_index": 3
+}

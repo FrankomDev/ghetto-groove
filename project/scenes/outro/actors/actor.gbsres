@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "e1c7305e-609a-4d75-a17e-51eb514c27c8",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "7a4cc5f3-d1c7-4cc4-801d-0b610565b113",
+  "prefabId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_93",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dobry browar tu mają!"
+        ],
+        "__section": "text",
+        "avatarId": "96127fdf-a6f4-4622-8bb8-956be524e5ff",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "8cece5e3-ff49-4a37-9830-75eb3ec2e67c"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 14,
+  "y": 17,
+  "_index": 0
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "a77da6f6-c4e5-4295-a927-ed54f34dfec6",
+  "name": "dach",
+  "symbol": "bg_dach",
+  "width": 40,
+  "height": 22,
+  "imageWidth": 320,
+  "imageHeight": 176,
+  "filename": "dach.png",
+  "tileColors": "07f0+00!0727+00!0713+00!0763+03ce+05a+03a+049+03b+05a+03a+049+03b+05a+03a+049+03b+05a+03a+049+065+036+05a+03a+049+065+036+05a+03a+049+00!064+036+05a+03a+049+00!064+",
+  "autoColor": false
+}

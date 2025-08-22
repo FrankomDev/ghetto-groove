@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "f24a8285-a066-4fdc-ad64-a7055b3fb726",
+  "name": "wypozyczalnia",
+  "symbol": "bg_wypozyczalnia",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "wypozyczalnia.png",
+  "tileColors": "013f+03e+016+03e+016+036+072+05!00!07!01!032+016+032+052+032+072+05!00!07!01!03!05!016+032+057+00!07!01!03!05!016+05e+016+05e+016+057+00!01!07!01!00!052+016+057+00!01!07!01!00!052+016+056+01!05!01!07!01!00!052+016+05e+016+05e+01e+052+012f+",
+  "autoColor": false
+}

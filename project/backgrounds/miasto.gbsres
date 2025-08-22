@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "99153b83-3018-4dda-b04a-f750f51dff15",
+  "name": "miasto",
+  "symbol": "bg_miasto",
+  "width": 40,
+  "height": 18,
+  "imageWidth": 320,
+  "imageHeight": 144,
+  "filename": "miasto.png",
+  "tileColors": "",
+  "autoColor": false
+}

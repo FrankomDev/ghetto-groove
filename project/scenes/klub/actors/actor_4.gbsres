@@ -1,0 +1,125 @@
+{
+  "_resourceType": "actor",
+  "id": "f3ed532f-a4b8-46ad-ab6f-375efa960a49",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "6af832f1-0592-4e93-a5f5-13c1ce551c41",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_50",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "31"
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "not",
+                "value": {
+                  "type": "variable",
+                  "value": "30"
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Siema chłopaki, \nzgarnę to szkło ze stołu!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "cb6106c2-b9fd-4d27-a447-5d235b937923"
+                },
+                {
+                  "command": "EVENT_REPLACE_TILE_XY",
+                  "args": {
+                    "x": {
+                      "type": "number",
+                      "value": 23
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "tilesetId": "f994499e-4c56-4fd1-ba53-9720c2fa34ff",
+                    "tileIndex": {
+                      "type": "number",
+                      "value": 6
+                    }
+                  },
+                  "id": "55c19e66-a344-447d-ab8b-d4fa47e5958c"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "29"
+                  },
+                  "id": "8c5b7073-110a-4e9e-aa16-cdae9a85476f"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "30",
+                    "value": {
+                      "type": "true"
+                    }
+                  },
+                  "id": "409b74e0-ef0a-4632-96f2-512f9d3b40c5"
+                }
+              ],
+              "false": []
+            },
+            "id": "6fd77748-5f3b-495d-95dd-df98acb815cc"
+          }
+        ],
+        "false": []
+      },
+      "id": "8e1f86b1-5d8e-41aa-bb75-2be972a0e49a"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 22,
+  "y": 13,
+  "_index": 4
+}

@@ -1,0 +1,152 @@
+{
+  "_resourceType": "actor",
+  "id": "513075a6-81eb-4957-86ea-b92f68463ad2",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "cac17f2d-aa41-444c-91f9-70764b70c077",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_82",
+  "script": [
+    {
+      "command": "EVENT_AWAIT_INPUT",
+      "args": {
+        "input": [
+          "a"
+        ]
+      },
+      "id": "f7e7af0e-e5ba-4004-9d61-1ef86e6a08b9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "5"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "To kawa od majstra, jest letnia...\nUżyć?"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "3f782b8c-d32d-48ee-a304-f75cdfa0573d"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "L0",
+              "trueText": "Tak",
+              "falseText": "Nie"
+            },
+            "id": "6429b70c-2932-4a92-a69e-ab94111076c3"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "variable",
+                "value": "L0"
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "4",
+                    "value": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  },
+                  "id": "b9b49ea6-99bf-4d9a-b96d-c06cedb774b4"
+                },
+                {
+                  "command": "EVENT_SCENE_POP_STATE",
+                  "args": {
+                    "fadeSpeed": "2"
+                  },
+                  "id": "47bda294-9156-46bb-aff1-cc42f27a1e93"
+                }
+              ],
+              "false": []
+            },
+            "id": "9fd03034-e497-40a6-9d17-ee4ea7ba29e0"
+          }
+        ],
+        "false": []
+      },
+      "id": "4e505f32-862b-413f-aee4-997b3c3911f5"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "8590a7f6-8a30-4561-8319-20d251bd9050"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "5"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [],
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "709ef7af-9ae0-402f-9ebf-dfc4cbc8d1ce"
+          }
+        ]
+      },
+      "id": "bf46ae40-5f35-42b3-96ab-52d3759ac62e"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 9,
+  "y": 4,
+  "_index": 8
+}

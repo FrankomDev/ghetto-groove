@@ -1,0 +1,79 @@
+{
+  "_resourceType": "scene",
+  "id": "3389b720-bde3-47eb-8d85-8002973baa8e",
+  "_index": 22,
+  "name": "klatkamiasto",
+  "backgroundId": "1c5a1a47-ac0a-450c-84c8-97e6081fc1f3",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "005+0f3+00f+0fb+009+0fb+009+0fb+009+0f3+002+0f6+009+0f2+007+0f7+004+0f2+007+0f7+004+0f2+003+08!04!002+0f7+004+0f2+003+08!04!002+0f7+004+0f2+003+08!04!002+0f6+005+0f2+003+08!04!002+0f6+005+0f2+003+08!04!006+0f2+005+0f6+04!006+0f2+005+0f6+04!006+0f3+008+0f2+003+0f7+008+0f9+00b+0f6+001b+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_23",
+  "x": 472,
+  "y": 872,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "4ac5cadb-5da8-46a1-b28d-ad2d80a3c842"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1"
+            },
+            "id": "94dbe28e-8622-45c1-91c9-efedfaf6d3ab"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "dbb76d1a-2966-40d4-88dc-12f509d561cd",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "c54c67fc-0acb-4e06-828a-b804111e944b"
+          }
+        ]
+      },
+      "id": "63ef5997-e29a-4f9c-83a9-f7f96b2b9c91"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "d3c48e4d-67dc-441a-9ce0-25e61303a67e"
+      },
+      "id": "194a6872-0d27-4d3b-a582-e2cf9f88d67c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f"
+}

@@ -1,0 +1,91 @@
+{
+  "_resourceType": "trigger",
+  "id": "8921433a-d3af-4acc-b5e2-8f11686d2c57",
+  "name": "",
+  "prefabId": "",
+  "x": 3,
+  "y": 11,
+  "symbol": "trigger_7",
+  "prefabScriptOverrides": {},
+  "width": 4,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "12"
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "78815e3d-d581-420a-a8b2-7ae2d60601c2",
+              "x": {
+                "type": "number",
+                "value": 23
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "down",
+              "fadeSpeed": "2"
+            },
+            "id": "f5309848-3356-4d37-8108-a0f831df427d"
+          }
+        ],
+        "false": []
+      },
+      "id": "350c74f3-d4a9-47fc-9cd5-a1deaf5308ca"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Nie mam po co iść na dach..."
+        ],
+        "__section": "layout",
+        "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "top",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "b51e8bb7-7337-472d-b98a-6c89630265c2"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": -1
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "1a05fc2f-975c-4343-8e08-3ac7467873a1"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 2
+}

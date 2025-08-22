@@ -1,0 +1,239 @@
+{
+  "_resourceType": "actor",
+  "id": "af0d9d87-c311-477d-8d59-740cbefd36c6",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "7664ab40-ea0d-4a8f-a822-8be83adf89e6",
+  "prefabId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_34",
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "10"
+        },
+        "__collapseElse": false,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Smażę więcej mocnych bitów bracie!\nNie przeszkadzaj artyście."
+              ],
+              "__section": "text",
+              "avatarId": "eee76fb4-162f-466e-bd87-0f704092fb55",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "98bc98b7-8d34-41d8-aabb-5cf1beb278a6"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "b6c5e688-c89c-4706-8d40-2e994bd6570f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Prąd w końcu działa, Jamal\nto ty to ogarnąłeś?"
+              ],
+              "__section": "text",
+              "avatarId": "eee76fb4-162f-466e-bd87-0f704092fb55",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "cf593fb8-1dbd-4d7b-8101-cfb2df61b8fe"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Pięknie, posłuchaj jakie \nbiciwo usmażyłem!"
+              ],
+              "__section": "text",
+              "avatarId": "eee76fb4-162f-466e-bd87-0f704092fb55",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "2c3dac59-a44e-4827-ad2f-88db73c35a98"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "up"
+              }
+            },
+            "id": "198b49e6-bcda-4c48-8712-4b2b72c8442e"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "2f099390-5ed8-4888-8cbe-f080e2c9fc01"
+            },
+            "id": "130e454d-d678-46d6-9b40-e09d4f1bab6d"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": 5,
+              "frames": 30
+            },
+            "id": "75407971-a20e-4bf9-94ba-cc648ff32c0c"
+          },
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "0515f104-8413-4d0e-b249-9a39d503e1cc"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Niezłe co?"
+              ],
+              "__section": "text",
+              "avatarId": "eee76fb4-162f-466e-bd87-0f704092fb55",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "343bb267-45b5-4c2c-9731-fdbf397a97d6"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Zdobyłeś inspirację!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 2,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "top",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "e06801c5-4b68-4cb2-abf5-314621cd4be3"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "6430d01d-b5ad-4ef9-a38c-18b78f363a21"
+            },
+            "id": "7c0f855f-7ae5-4e67-98ad-2eb1f4d0330c"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "14",
+              "__collapse": false
+            },
+            "id": "b31bc434-1f37-4c14-85c4-b2d920e93928"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "10",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "f87cae42-d7de-4426-8ae1-9612400809f9"
+          }
+        ]
+      },
+      "id": "4525dabe-c9a5-4c19-816a-37242558a01a"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 13,
+  "y": 7,
+  "_index": 2
+}

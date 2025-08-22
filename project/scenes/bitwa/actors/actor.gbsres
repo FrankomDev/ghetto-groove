@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "a1d91fcb-7fa7-4382-91a5-01f94e786e4f",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "93ddab05-ebde-4526-9221-a3f4a1e5f539",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_12",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Chciałbym kiedyś zrobić wsad..."
+        ],
+        "__section": "text",
+        "avatarId": "61faa225-bb3f-44cb-aac9-a0efb4ea2ada",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "aa7619aa-1de8-4ea7-ac93-3ae5e384adec"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 18,
+  "y": 5,
+  "_index": 0
+}

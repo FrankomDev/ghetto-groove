@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "bea1b54a-fecc-4751-880d-25a01f12befd",
+  "name": "building_parts_tileset",
+  "symbol": "bg_building_parts_tileset",
+  "width": 21,
+  "height": 54,
+  "imageWidth": 168,
+  "imageHeight": 432,
+  "filename": "building_parts_tileset.png",
+  "tileColors": "",
+  "autoColor": false
+}

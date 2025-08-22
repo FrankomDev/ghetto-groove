@@ -1,0 +1,58 @@
+{
+  "_resourceType": "trigger",
+  "id": "073e0914-bdec-432b-ac29-2a8d92ae458f",
+  "name": "",
+  "prefabId": "",
+  "x": 5,
+  "y": 11,
+  "symbol": "trigger_46",
+  "prefabScriptOverrides": {},
+  "width": 4,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Nie mam po co iść na dach..."
+        ],
+        "__section": "text",
+        "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "top",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "14c4db6b-94f0-4456-944f-b636710d9977"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_RELATIVE",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": -1
+        },
+        "moveType": "horizontal",
+        "useCollisions": false
+      },
+      "id": "afd6c2dd-5447-4d2b-b059-8698f9a1af39"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

@@ -1,0 +1,233 @@
+{
+  "_resourceType": "actor",
+  "id": "e7ddee15-6325-4951-a152-57c4c4fb761e",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a59e706b-97a3-4a72-a240-6ffae77cb7d2",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_20",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Jesteś gotowy żeby ponawijać?"
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "5947a5e4-6e3c-49a9-a867-46f86cc33390"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "L0",
+        "trueText": "Tak",
+        "falseText": "Nie"
+      },
+      "id": "10f8a93b-8d96-48c8-9fb4-8d428aa17248"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "L0"
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "14"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Dobra, wołamy chłopaków i jazda!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "3135f731-cacf-4160-a6f3-8b1c2a5ee248"
+                },
+                {
+                  "command": "EVENT_MUSIC_STOP",
+                  "args": {},
+                  "id": "f4c57834-e939-49eb-8024-e995c5e6257f"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": 1,
+                    "frames": 30
+                  },
+                  "id": "a0e69887-8ffa-44b8-a978-e231896010e8"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "ffcab9ce-3710-4c41-8976-7325d42cc914",
+                    "x": {
+                      "type": "number",
+                      "value": 21
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "direction": "left",
+                    "fadeSpeed": 4
+                  },
+                  "id": "c0b42d14-ef49-4563-b199-fdefcd156521"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "No nie wiem, nie wyglądasz jakbyś\nmiał wenę."
+                    ],
+                    "__section": "text",
+                    "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+                    "minHeight": 4,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "bottom",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "61e10e66-77b1-4b2d-915a-495112528568"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Potrzebujesz więcej inspiracji!"
+                    ],
+                    "__section": "text",
+                    "avatarId": "",
+                    "minHeight": 2,
+                    "maxHeight": 7,
+                    "textX": 1,
+                    "textY": 1,
+                    "textHeight": 5,
+                    "position": "top",
+                    "clearPrevious": true,
+                    "showFrame": "true",
+                    "speedIn": -1,
+                    "speedOut": -1,
+                    "closeWhen": "key",
+                    "closeButton": "a",
+                    "closeDelayTime": 0.5,
+                    "closeDelayFrames": 30
+                  },
+                  "id": "bd33d9a4-fcda-4810-bbbb-f21ad59d517f"
+                }
+              ]
+            },
+            "id": "d8fe32dc-69e5-45b1-a4f4-7b2041d57fb8"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Spoko, jak będziesz gotowy to\nprzyjdź tu i mi powiedz."
+              ],
+              "__section": "text",
+              "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "2e09f490-bc42-44cb-b502-91a6ef2c1c2f"
+          }
+        ]
+      },
+      "id": "1acdffea-ef49-4b0a-b181-b2020cbca967"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 21,
+  "y": 5,
+  "_index": 1
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "67ca3ae4-a612-427e-af01-5070cb8658e8",
+  "name": "lombard",
+  "symbol": "bg_lombard",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "lombard.png",
+  "tileColors": "0119+036+074+01a+036+074+01a+036+074+011e+05!078+05!01a+05!073+012+073+05!01a+05!018+05!01cd+",
+  "autoColor": false
+}

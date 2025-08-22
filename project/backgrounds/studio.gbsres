@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "f3cad897-88fe-474c-ab98-c789d8f59c54",
+  "name": "studio",
+  "symbol": "bg_studio",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "studio.png",
+  "tileColors": "042b+03f+045+03f+045+03a+062+033+045+032+004+034+064+03!047+004+044+064+04df+",
+  "autoColor": false
+}

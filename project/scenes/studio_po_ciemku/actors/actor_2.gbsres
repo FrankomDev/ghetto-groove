@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "4e1cc22f-ec75-4a73-ac54-1b07bdb7c2ef",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "02ff6962-5780-4c0f-97eb-5637fa91ac04",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_11",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Ale gówniany mikrofon... ale\nnie sprzęt się liczy!"
+        ],
+        "__section": "behavior",
+        "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "9009673f-6dba-48ca-af01-da678e6265dd"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 11,
+  "y": 6,
+  "_index": 1
+}

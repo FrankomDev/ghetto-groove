@@ -1,0 +1,228 @@
+{
+  "_resourceType": "scene",
+  "id": "d16ae051-1846-42a5-ae27-0fc425601c3e",
+  "_index": 2,
+  "name": "pokój jamala",
+  "backgroundId": "8dab9626-f8d0-44bc-953d-93cdf66f552f",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0016+0f10+004+0f!00e+0f!004+0f!00b+0f4+003+0fa+003+0f4+003+0f11+003+0f6+007+0f4+004+0f!00e+0f!004+0f!00b+0f4+004+0f!00b+0f4+004+0f5+00a+0f!004+0f8+002+0f6+00b+0f4+006b+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_3",
+  "x": 480,
+  "y": 264,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "11"
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "JAMAL!!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "top",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "8ad30f22-603e-4158-969e-e8baffc8dd96"
+          },
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "$self$",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "6a47e30d-e0a6-4e9d-acc3-14777bf238b9"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 6
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "fceea774-5d95-4f0b-a6ae-5dfff945f180"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "JAMAL!! wychodź na ośkę!"
+              ],
+              "__section": "text",
+              "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30,
+              "__collapse": false
+            },
+            "id": "d3d57634-a82e-4e03-9534-f36c052f5efe"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 10
+              },
+              "y": {
+                "type": "number",
+                "value": 8
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "22b00b93-7a82-4d8c-b121-41493570c0af"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Eric woła mnie na dwór.\nCiekawe co kombinują..."
+              ],
+              "__section": "text",
+              "avatarId": "1978cac9-ae83-42f8-8df9-12972decd62c",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "top",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "51d20961-d738-4c5d-b722-9ccb7e3de449"
+          },
+          {
+            "command": "EVENT_MUSIC_PLAY",
+            "args": {
+              "musicId": "6430d01d-b5ad-4ef9-a38c-18b78f363a21"
+            },
+            "id": "eae69f3b-9b9e-4cf2-809f-3ddf1e660447"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "11",
+              "value": {
+                "type": "true"
+              }
+            },
+            "id": "366b1fc9-9639-481e-a28d-e2e755b0cb20"
+          }
+        ],
+        "false": []
+      },
+      "id": "ed8cb22a-13d3-4792-8d85-1b9a7dc3062a"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "f7aff4a6-db05-4ff2-9446-3acf98e5dc8f"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1"
+            },
+            "id": "bfc041f7-7054-4fc1-8e02-823f99e17e22"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "24cb40d4-e70c-4182-84a6-cac04acff2a5",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "dde4b809-36a6-4142-8b24-76e22fc03f90"
+          }
+        ]
+      },
+      "id": "2adf67a3-fe6f-4726-8c59-70f9f0de20d8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f",
+  "autoFadeEventCollapse": false
+}

@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "22da928d-bc43-42ea-b7c2-1d5c267ec9b6",
+  "name": "studionoele",
+  "symbol": "bg_studionoele",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "studionoele.png",
+  "tileColors": "01118+00!014f+",
+  "autoColor": false
+}

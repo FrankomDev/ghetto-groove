@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "b1734521-48ad-4015-980d-353fd49ac740",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "a59e706b-97a3-4a72-a240-6ffae77cb7d2",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_14",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Siema brachu, co u ciebie słychać"
+        ],
+        "__section": "text",
+        "avatarId": "7e1fa453-69f4-42f8-ab61-02fd887dc66b",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "bd55b11d-5d49-4209-82c6-14d26911328c"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 16,
+  "y": 6,
+  "_index": 1
+}

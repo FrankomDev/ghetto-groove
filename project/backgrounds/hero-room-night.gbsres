@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "6c090a0a-2c03-4a22-8569-caeeed79b422",
+  "name": "hero-room-night",
+  "symbol": "bg_hero_room_night",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "hero-room-night.png",
+  "tileColors": "032b+01!034+012+034+013+036+01e+036+012+033+012+034+013+036+01e+036+01e+03a+01a+03a+01a+036+01e+036+004+01a+03d+012+0313+01!036c+",
+  "autoColor": false
+}

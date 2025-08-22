@@ -1,0 +1,144 @@
+{
+  "_resourceType": "scene",
+  "id": "7d89323f-ea24-4b68-b961-b3138777fbfb",
+  "_index": 15,
+  "name": "klub",
+  "backgroundId": "825d5993-ac2a-4f2c-8007-74b89cfc424d",
+  "tilesetId": "",
+  "width": 27,
+  "height": 23,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0024+0f!001a+0f!001a+0f!0013+0f8+0012+0f2+006+0f!0013+0f!006+0f!0013+0f!006+0f8+00b+0f2+006+0f!006+0fb+00!0f!006+0f2+006+0f2+008+0f!00!0f!006+0f2+006+0f2+008+0f!00!0f!006+0f2+006+0f2+008+0f!00!0f!008+0f6+006+0f2+002+0f!00!0f!0014+0f2+002+0f!00!0f!003+0f2+0013+0f!00!0f!003+0f2+0013+0f!00!0f!0018+0f!00!0f!0018+0f!00!0f13+004+0f3+0013+0f!004+0f!0015+0f!004+0f!0015+0f6+001d+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_16",
+  "x": 800,
+  "y": 656,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "4ff86230-2ec7-4707-b8fa-000a74fd2391"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1"
+            },
+            "id": "4cbf84ac-a8ca-4454-9b2a-35e2c3a352cc"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "dbb76d1a-2966-40d4-88dc-12f509d561cd",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "3e326313-1248-424a-b082-b7ce29a9b20e"
+          }
+        ]
+      },
+      "id": "f9115425-7315-4ca2-b774-de501a92afd8"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "30"
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 23
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "tilesetId": "f994499e-4c56-4fd1-ba53-9720c2fa34ff",
+              "tileIndex": {
+                "type": "number",
+                "value": 6
+              }
+            },
+            "id": "7dfe1ecb-4e81-41ee-aafe-601aadcb0794"
+          }
+        ],
+        "false": []
+      },
+      "id": "27295b32-c71f-48da-a1d3-5be63b24df10"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "variable",
+          "value": "32"
+        },
+        "__collapseElse": true,
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_REPLACE_TILE_XY",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 4
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "tilesetId": "f994499e-4c56-4fd1-ba53-9720c2fa34ff",
+              "tileIndex": {
+                "type": "number",
+                "value": 6
+              }
+            },
+            "id": "add7ca8e-2b9b-4257-b1ce-2d1237342133"
+          }
+        ],
+        "false": []
+      },
+      "id": "e3456cdc-2c6c-4a85-9361-37d124d9c582"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f"
+}

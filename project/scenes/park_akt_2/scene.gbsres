@@ -1,0 +1,80 @@
+{
+  "_resourceType": "scene",
+  "id": "2e76b1ef-2a62-4535-b488-ad8b7918bdec",
+  "_index": 20,
+  "name": "park akt 2",
+  "backgroundId": "66b6866f-9eca-4af0-8eb6-7b9bf4d4f3a1",
+  "tilesetId": "",
+  "width": 30,
+  "height": 20,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00e+0f!008+0f7+00e+0f!008+0f!0014+0f!008+0f!00d+0f!006+0fa+00d+0f!005+0f2+003+0f2+003+0f!00d+0f8+008+0f!00d+0f!00f+0f!00d+0f!00f+0f!00d+0f!00f+0f2+00c+0f!00f+0f2+00c+0f!00f+0f2+00b+0f2+00f+0f2+006+0f2+003+0f2+00f+0f2+005+0f!002+0f5+00f+0f2+005+0f!002+0f5+00f+0f5+0019+0f2+002+0f3+001e+0f3c+001e+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_21",
+  "x": 248,
+  "y": 672,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "7a3fec7a-9c89-4685-a8fe-8ae9a4337242"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1"
+            },
+            "id": "24655061-4c2e-4940-ae89-875ca1847ff5"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "dbb76d1a-2966-40d4-88dc-12f509d561cd",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 3
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "69460ef6-830e-4df5-af2c-682bbdcf41f7"
+          }
+        ]
+      },
+      "id": "8c089981-b609-45f9-bd4f-a6ef4c209095"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "d3c48e4d-67dc-441a-9ce0-25e61303a67e"
+      },
+      "id": "4992677a-e76c-4a27-b2a5-d5ef732d40e9"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f",
+  "autoFadeEventCollapse": true
+}

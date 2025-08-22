@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "8dab9626-f8d0-44bc-953d-93cdf66f552f",
+  "name": "hero-room",
+  "symbol": "bg_hero_room",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "hero-room.png",
+  "tileColors": "012c+044+012+044+011f+043+012+044+01b+022+0110+02b+053+016+034+02a+016+034+027+043+016+02b+043+016+004+02a+01d+022+017c+04!013+",
+  "autoColor": false
+}

@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "b7512d69-bf46-41d5-8767-91c6ca41380d",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "deebf97d-e03f-4843-9684-2684c67ddd1b",
+  "prefabId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_15",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "elo braciszku"
+        ],
+        "__section": "text",
+        "avatarId": "d5719cb3-96c3-42b2-b49b-9adb6e347b21",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "e01bf2d6-b6b5-4e3e-b61c-3d054ebed79d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 14,
+  "y": 10,
+  "_index": 2
+}

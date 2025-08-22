@@ -1,0 +1,96 @@
+{
+  "_resourceType": "trigger",
+  "id": "635015fa-0c80-481e-bbb5-0c1bd33bce00",
+  "name": "",
+  "prefabId": "",
+  "x": 2,
+  "y": 9,
+  "symbol": "trigger_23",
+  "prefabScriptOverrides": {},
+  "width": 6,
+  "height": 1,
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "not",
+          "value": {
+            "type": "variable",
+            "value": "L0"
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "7834c3ca-7c86-4f18-ae56-29662fc4d281",
+              "emoteId": "56423c9c-dca0-4f5b-ad92-28e9660d50f1"
+            },
+            "id": "e6db5596-1fa4-4522-a89b-6172972539ef"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "E! Pan Jefe nie życzy sobie gości..."
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "4b127512-0fb3-4a0e-adc4-70cca3ec78a2"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_RELATIVE",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 1
+              },
+              "moveType": "horizontal",
+              "useCollisions": false
+            },
+            "id": "c642738c-7049-4df0-bad8-b6c0294790cc"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "7834c3ca-7c86-4f18-ae56-29662fc4d281",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            },
+            "id": "cefad8fb-5965-4d14-ab80-0a814bea10ab"
+          }
+        ],
+        "false": []
+      },
+      "id": "c6799d18-2a6c-49c9-8b45-59a9446bb445"
+    }
+  ],
+  "leaveScript": [],
+  "_index": 1
+}

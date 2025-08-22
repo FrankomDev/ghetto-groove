@@ -1,0 +1,13 @@
+{
+  "_resourceType": "background",
+  "id": "dc0815ba-844a-4159-bb81-2d7a54fd9415",
+  "name": "akt2",
+  "symbol": "bg_akt2",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144,
+  "filename": "akt2.png",
+  "tileColors": "04168+",
+  "autoColor": false
+}

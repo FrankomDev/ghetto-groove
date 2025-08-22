@@ -1,0 +1,79 @@
+{
+  "_resourceType": "scene",
+  "id": "90fb26f2-f35d-474c-a805-8ef3de002227",
+  "_index": 9,
+  "name": "studio jasne",
+  "backgroundId": "f3cad897-88fe-474c-ab98-c789d8f59c54",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "0016+0f!0013+0f!00f+0f!003+0f!00f+0f!003+0f!00f+0f!003+0f11+003+0f!00!08!04!002+08!04!003+0f4+00!0f!003+0f!00f+0f!003+0f!00f+0f!003+0f!00f+0f!003+0f8+002+0f7+00a+0f!002+0f!0010+0f!002+0f2+00f+0f!002+0f!0010+0f!002+0f!0010+0f4+002f+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_10",
+  "x": 992,
+  "y": 264,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "__scriptTabs": "press",
+        "__collapse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "de12ddca-dc8e-45bb-b9c7-7cc794763421"
+          },
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "$self$",
+              "vectorX": "0",
+              "vectorY": "1"
+            },
+            "id": "78b17036-58a0-4c5a-ba05-b893e5e92b51"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "24cb40d4-e70c-4182-84a6-cac04acff2a5",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 5
+              },
+              "direction": "",
+              "fadeSpeed": "2",
+              "__collapse": false
+            },
+            "id": "8ea29714-bf34-4a29-9681-b7c65a65778b"
+          }
+        ]
+      },
+      "id": "920bb79c-9d9a-4d79-bfa4-f496adbab077"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "6430d01d-b5ad-4ef9-a38c-18b78f363a21"
+      },
+      "id": "a92b1554-4f76-4ac7-bc61-3d059c32e346"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "7f661f24-75a5-4b44-968f-2721d4d5837f"
+}

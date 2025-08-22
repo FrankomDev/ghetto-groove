@@ -1,0 +1,53 @@
+{
+  "_resourceType": "actor",
+  "id": "8da84cae-cdb1-4550-9a3e-db598e856bd6",
+  "name": "",
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "93ddab05-ebde-4526-9221-a3f4a1e5f539",
+  "prefabId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "paletteId": "",
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "prefabScriptOverrides": {},
+  "symbol": "actor_6",
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Będziemy mogli robić bardzo długie\ndialogi w grze, zobaczcie ile się mieści"
+        ],
+        "__section": "text",
+        "avatarId": "61faa225-bb3f-44cb-aac9-a0efb4ea2ada",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -1,
+        "speedOut": -1,
+        "closeWhen": "key",
+        "closeButton": "a",
+        "closeDelayTime": 0.5,
+        "closeDelayFrames": 30
+      },
+      "id": "700bd3e9-a328-4b64-aae0-ebc31a85b467"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": [],
+  "x": 18,
+  "y": 5,
+  "_index": 0
+}

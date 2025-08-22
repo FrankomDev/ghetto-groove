@@ -1,0 +1,11 @@
+{
+  "_resourceType": "tileset",
+  "id": "9584d9ca-a885-4b7d-aed8-f5fbc37db3ac",
+  "name": "building_parts_tileset",
+  "symbol": "tileset_building_parts_tile",
+  "width": 21,
+  "height": 54,
+  "imageWidth": 168,
+  "imageHeight": 432,
+  "filename": "building_parts_tileset.png"
+}
