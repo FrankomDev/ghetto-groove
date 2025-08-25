@@ -26,7 +26,7 @@
             "value": "26"
           }
         },
-        "__collapseElse": true
+        "__collapseElse": false
       },
       "children": {
         "true": [
@@ -106,34 +106,35 @@
             "id": "eb0d483a-c67f-43ca-ae64-d2022a91733e"
           }
         ],
-        "false": []
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Zapraszam Pana do klubu!"
+              ],
+              "__section": "text",
+              "avatarId": "",
+              "minHeight": 4,
+              "maxHeight": 7,
+              "textX": 1,
+              "textY": 1,
+              "textHeight": 5,
+              "position": "bottom",
+              "clearPrevious": true,
+              "showFrame": "true",
+              "speedIn": -1,
+              "speedOut": -1,
+              "closeWhen": "key",
+              "closeButton": "a",
+              "closeDelayTime": 0.5,
+              "closeDelayFrames": 30
+            },
+            "id": "1c133cd4-f603-4c8c-819c-232a09dde61a"
+          }
+        ]
       },
       "id": "27077645-191d-4937-bc8d-67e18f53c9d7"
-    },
-    {
-      "command": "EVENT_TEXT",
-      "args": {
-        "text": [
-          "Zapraszam Pana do klubu!"
-        ],
-        "__section": "text",
-        "avatarId": "c0376103-a9a1-4005-9c94-13f86ff1ed3e",
-        "minHeight": 4,
-        "maxHeight": 7,
-        "textX": 1,
-        "textY": 1,
-        "textHeight": 5,
-        "position": "bottom",
-        "clearPrevious": true,
-        "showFrame": "true",
-        "speedIn": -1,
-        "speedOut": -1,
-        "closeWhen": "key",
-        "closeButton": "a",
-        "closeDelayTime": 0.5,
-        "closeDelayFrames": 30
-      },
-      "id": "33ebe282-a8b9-4146-93d5-a800bd766711"
     }
   ],
   "startScript": [],
