@@ -6,3 +6,4 @@ cache/
 *.icloud
 
 user_settings.gbsres
+.DS_Store
